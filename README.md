@@ -12,7 +12,7 @@ This repository is intended to be copied for each person's private data. It shou
 The reusable code lives in:
 
 ```text
-vendor/openai-git-charts
+openai-git-charts
 ```
 
 That folder is expected to be a Git submodule in real use.
@@ -60,4 +60,3 @@ reports/personal-analytics.html
 HAR files are sorted by modification time. For the same endpoint and date, the newest row wins.
 
 Overlapping captures are safe and recommended.
-

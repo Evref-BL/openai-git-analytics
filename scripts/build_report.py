@@ -9,7 +9,7 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-GENERIC_ROOT = PROJECT_ROOT / "vendor" / "openai-git-charts"
+GENERIC_ROOT = PROJECT_ROOT / "openai-git-charts"
 sys.path.insert(0, str(GENERIC_ROOT))
 
 from openai_git_charts import openai_har  # noqa: E402

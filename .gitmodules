@@ -1,3 +1,3 @@
-[submodule "vendor/openai-git-charts"]
-	path = vendor/openai-git-charts
+[submodule "openai-git-charts"]
+	path = openai-git-charts
 	url = ../openai-git-charts
