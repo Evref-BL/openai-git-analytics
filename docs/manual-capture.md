@@ -2,6 +2,18 @@
 
 Use this process while you do not have access to the official Analytics API.
 
+The goal is to save a HAR file that includes the analytics page's JSON response bodies. Save each capture in:
+
+```text
+data/raw/har/
+```
+
+Recommended filename pattern:
+
+```text
+chatgpt-codex-analytics_YYYY-MM-DD_HHMM.har
+```
+
 ## Firefox HAR Capture
 
 1. Open `https://chatgpt.com/codex/cloud/settings/analytics`.
@@ -16,11 +28,21 @@ Use this process while you do not have access to the official Analytics API.
 10. Choose `Save All As HAR`.
 11. Save the file into `data/raw/har/`.
 
-Recommended filename pattern:
+## Chrome HAR Capture
 
-```text
-chatgpt-codex-analytics_YYYY-MM-DD_HHMM.har
-```
+1. Open `https://chatgpt.com/codex/cloud/settings/analytics`.
+2. Open DevTools with `Cmd+Opt+I`.
+3. Go to the Network tab.
+4. Enable `Preserve log`.
+5. Click the clear button to empty the network log.
+6. Reload the analytics page.
+7. Set the desired date range.
+8. Visit every dashboard tab or section you want to preserve.
+9. Right-click the Network request list.
+10. Choose `Save all as HAR with content`.
+11. Save the file into `data/raw/har/`.
+
+If Chrome only offers a HAR without content, make sure the Network tab was open before reloading and that the requests have response bodies visible in the Preview or Response panel.
 
 ## Rebuild
 
@@ -41,4 +63,3 @@ Confirm:
 - the new HAR is listed under `inputs`
 - expected endpoints are present
 - row counts did not unexpectedly shrink
-
