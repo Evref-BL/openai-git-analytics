@@ -8,4 +8,3 @@ data/raw/har/*.har
 # Generated private outputs.
 data/processed/
 reports/
-
