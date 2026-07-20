@@ -1,0 +1,12 @@
+{
+  "start": null,
+  "end": null,
+  "include_merges": false,
+  "repositories": [
+    {
+      "name": "Example",
+      "path": "/absolute/path/to/git/repository"
+    }
+  ]
+}
+

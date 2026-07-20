@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# Raw HAR captures can contain authenticated metadata and private usage data.
+data/raw/har/*.har
+
+# Generated private outputs.
+data/processed/
+reports/
+
